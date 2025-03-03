@@ -245,8 +245,6 @@ void initializeVariables() {
         pices_directions[i] = current_direction;
     }
     reallocApple();
-    moves = (Queue*)malloc(sizeof(Queue));
-    initQueue(moves);
     current_direction = (directions)(getRandomInRange(0, directions_count - 1));
     game = true;
 }
